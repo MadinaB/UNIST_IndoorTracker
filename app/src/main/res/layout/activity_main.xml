@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bckg"
+    android:background="@drawable/bckg2"
     android:orientation="vertical"
-    android:paddingBottom="0dp"
+    android:paddingBottom="10dp"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
-    android:paddingTop="0dp"
+    android:paddingTop="10dp"
     tools:context="com.madinabektayeva.unist_indoortracker.MainActivity">
 
     <RelativeLayout
@@ -22,45 +22,78 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="90dp"
             android:src="@drawable/map" />
 
         <com.madinabektayeva.unist_indoortracker.CustomView
             android:id="@+id/customView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="90dp"
-            android:background="@android:color/transparent"
-            android:layout_alignParentBottom="true" />
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent" />
 
     </RelativeLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:layout_weight="3"
         android:orientation="vertical">
 
 
         <Button
             android:id="@+id/start_walk"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background = "@drawable/start_walk_button" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/start_walk_button2" />
 
         <Button
             android:id="@+id/stop_walk"
-            android:layout_marginBottom="5dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background = "@drawable/stop_walk_button" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/stop_walk_button" />
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:id="@+id/text_window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/text_field" />
+
+            <TextView
+                android:id="@+id/text_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:text=""
+                android:textColor="@color/white"
+                android:layout_marginTop="2dp"
+                android:textSize="20dp" />
+        </RelativeLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
