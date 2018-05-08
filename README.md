@@ -1,6 +1,6 @@
 
-![ ](demo/indoorunist1.png)
-![ ](demo/indoorunist2.png)
+![ ](demo/indoorunist1.gif)
+![ ](demo/indoorunist2.gif)
 
 
 
